@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto praia limpa</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/codigo.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="logo">
+        <img src="img/projeto_praia_limpa.png" alt="">
+    </div>
+    <div class="form_box">
+        <h1>Seja Voluntário!</h1>
+        <h2> Ajude a manter as praias de Ubatuba limpas! Preencha o formulário: </h2>
+        <form action="">
+            <div class="f_line">
+                <span>
+                    <label>Nome completo: </label>
+                    <input type="text" id="nome"required>
+                </span>
+            </div>
+            <div class="f_line">
+                <span>
+                    <label>Possui fácil acesso às praias de Ubatuba-Sp?</label>
+
+                    Sim
+                    <input type="radio" name="acesso"checked>
+
+                    Não
+                    <input type="radio" name="acesso">
+
+
+                </span>
+            </div>
+            <div class="f_line">
+                <span>
+                    <label > Disponibilidade: </label>
+
+                    Dias da semana
+                    <input type="radio" name="disponivel"checked>
+
+                    Apenas finais de semana
+                    <input type="radio" name="disponivel">
+
+
+    
+                </span>
+               
+            </div>
+            <div class="f_line">
+                <span>
+                    <label>Possui ferramentas para limpeza de praia?</label>
+
+                    Sim
+                    <input type="radio" name="ferramentas"checked>
+
+                    Não
+                    <input type="radio" name="ferramentas">
+
+
+                </span>
+            </div>
+            <div class="f_line">
+                <span>
+                    <label>contato: </label>
+
+                    E-mail:
+                    <input type="email" name="contato" required>
+
+                    Celular:
+                    <input type="number" name="contato">
+
+
+                </span>
+            </div>
+            <div class="f_line">
+                <span>
+                    <input type="submit" id="btt_form" value="enviar" onclick="validacao">
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+    
+</body>
+</html>

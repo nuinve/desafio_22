@@ -1,0 +1,132 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #ffffff;
+}
+.main{
+    display: flex;   
+    margin: 20px;  
+    padding: 20px;
+    align-items: center;  
+    
+}
+img{
+    height: 600px;
+    padding-left: 100px;
+    
+    
+}
+.form_box{
+    margin:auto;      
+    width: max-content;    
+    padding: 25px;
+    background-color: #ffe47a3b;
+    border-radius: 10px;
+    
+    
+}
+.form_box h1{
+    text-align: center;    
+    font-size: 45px;
+    color: #3da3b1;
+}
+.form_box h2{
+    text-align: center;
+    font-size: 20px;
+    color: #a86f04;  
+    height: auto;
+    background-color: #f8f1d8;
+    border-radius: 10px;
+    
+}
+.f_line{
+    display: flex;
+}
+.f_line span{
+    padding: 10px;
+}
+
+.f_line label{
+    display: block;
+    padding-bottom: 2px;    
+    color: #1c7686;
+    font-size: 20px;
+}
+.f_line input[type=text], input[type=email], input[type=number], select{
+    width: 250px;
+    height: 20px;
+    border: 1px solid #0793a5;
+    border-radius: 5px;
+}
+
+#btt_form{
+    
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    background-color: #027497;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 20px;
+    transition: 0.5s;
+    
+}
+
+#btt_form:hover{
+    transition: 0.5s;
+    background-color: #055466;
+}
+
+@media (max-width: 768px) {
+    img{
+        height: auto;
+    }
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form_box {
+        width: auto;
+        padding: 15px;
+    }
+
+    .form_box h1 {
+        font-size: 35px;
+    }
+
+    .form_box h2 {
+        font-size: 18px;
+    }
+
+    .f_line input[type=text], 
+    .f_line input[type=email], 
+    .f_line input[type=number], 
+    .f_line select {
+        width: 100%;
+    }
+
+    #btt_form {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    img{
+        height: 300px;
+    }
+    .form_box h1 {
+        font-size: 30px;
+    }
+
+    .form_box h2 {
+        font-size: 16px;
+    }
+
+    #btt_form {
+        width: auto;       
+        
+    }
+}
